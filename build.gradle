@@ -1,0 +1,34 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group = 'com.naver'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.0.47'
+    implementation 'javax.servlet:jstl'
+    implementation 'junit:junit:4.12'
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude module: 'junit' //junit5
+        exclude module: 'org.junit.vintage:junit-vintage-engine'
+    }
+    //junit5
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.5.2')
+    testCompile('org.junit.jupiter:junit-jupiter-params:5.5.2')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.5.2')
+
+}
+
+test {
+    useJUnitPlatform()
+}
