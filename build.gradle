@@ -18,6 +18,12 @@ dependencies {
     implementation 'javax.servlet:jstl'
     implementation 'junit:junit:4.12'
     compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0'
+    // spring-data-redis
+    compile('org.springframework.boot:spring-boot-starter-data-redis')
+    // embedded-redis
+    compile group: 'it.ozimov', name: 'embedded-redis', version: '0.7.2'
+    compileOnly('org.projectlombok:lombok')
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude module: 'junit' //junit5
         exclude module: 'org.junit.vintage:junit-vintage-engine'
