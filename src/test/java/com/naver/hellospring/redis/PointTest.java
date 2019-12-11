@@ -12,11 +12,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.naver.hellospring.domain.Point;
-import com.naver.hellospring.domain.PointRedisRepository;
+import com.naver.hellospring.domain.redisrepo.PointRedisRepository;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class RedisTest {
+public class PointTest {
 
 	@Autowired
 	private PointRedisRepository pointRedisRepository;
@@ -27,9 +27,9 @@ public class RedisTest {
 	}
 
 	@Test
-	public void 기본_등록_조회기능() {
+	public void test() {
 		//given
-		String id = "jojoldu";
+		String id = "PointTest";
 		LocalDateTime refreshTime = LocalDateTime.of(2018, 5, 26, 0, 0);
 		Point point = Point.builder()
 			.id(id)
