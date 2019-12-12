@@ -12,8 +12,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.util.StringUtils;
 
+import lombok.extern.slf4j.Slf4j;
 import redis.embedded.RedisServer;
 
+@Slf4j
 @Profile("local")
 @Configuration
 public class EmbeddedRedisConfig {
@@ -25,7 +27,7 @@ public class EmbeddedRedisConfig {
 
 	@PostConstruct
 	public void redisServer() throws IOException {
-		int port = isRedisRunning()? findAvailablePort() : redisPort;
+		int port = isRedisRunning() ? findAvailablePort() : redisPort;
 		redisServer = new RedisServer(port);
 		redisServer.start();
 	}

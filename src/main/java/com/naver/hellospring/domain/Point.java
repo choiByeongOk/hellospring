@@ -8,7 +8,9 @@ import org.springframework.data.redis.core.RedisHash;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Getter
 @RedisHash("point")
 public class Point implements Serializable {
@@ -25,8 +27,8 @@ public class Point implements Serializable {
 		this.refreshTime = refreshTime;
 	}
 
-	public void refresh(long amount, LocalDateTime refreshTime){
-		if(refreshTime.isAfter(this.refreshTime)){ // 저장된 데이터보다 최신 데이터일 경우
+	public void refresh(long amount, LocalDateTime refreshTime) {
+		if (refreshTime.isAfter(this.refreshTime)) { // 저장된 데이터보다 최신 데이터일 경우
 			this.amount = amount;
 			this.refreshTime = refreshTime;
 		}

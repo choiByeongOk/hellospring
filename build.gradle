@@ -22,7 +22,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-redis')
     // embedded-redis
     compile group: 'it.ozimov', name: 'embedded-redis', version: '0.7.2'
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    // compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
     compileOnly('org.projectlombok:lombok')
     annotationProcessor 'org.projectlombok:lombok:1.18.10'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
