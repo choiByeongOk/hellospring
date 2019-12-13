@@ -1,4 +1,4 @@
-package com.naver.hellospring.redis.config;
+package com.naver.hellospring.storage.config.redis;
 
 import java.io.BufferedReader;
 import java.io.IOException;

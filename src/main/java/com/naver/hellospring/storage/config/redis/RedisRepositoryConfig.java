@@ -1,4 +1,4 @@
-package com.naver.hellospring.redis.config;
+package com.naver.hellospring.storage.config.redis;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

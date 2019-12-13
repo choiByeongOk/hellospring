@@ -17,7 +17,10 @@ dependencies {
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:8.0.47'
     implementation 'javax.servlet:jstl'
     implementation 'junit:junit:4.12'
+    //mongodb
     implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+    // embedded-mongodb
+    compile 'de.flapdoodle.embed:de.flapdoodle.embed.mongo:2.2.0'
     compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0'
     // spring-data-redis
     compile('org.springframework.boot:spring-boot-starter-data-redis')

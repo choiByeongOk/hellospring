@@ -1,4 +1,4 @@
-package com.naver.hellospring.redis;
+package com.naver.hellospring.storage.config.redis;
 
 import static org.assertj.core.api.Assertions.*;
 

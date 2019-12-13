@@ -21,7 +21,7 @@ public class MongoDBTest {
 
 	@After
 	public void tearDown() throws Exception {
-		//personMongoDBRepository.deleteAll();
+		personMongoDBRepository.deleteAll();
 	}
 
 	@Test
