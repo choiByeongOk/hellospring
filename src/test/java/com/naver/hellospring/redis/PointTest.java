@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.naver.hellospring.domain.Point;
-import com.naver.hellospring.domain.redisrepo.PointRedisRepository;
+import com.naver.hellospring.domain.repository.redisrepo.PointRedisRepository;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest

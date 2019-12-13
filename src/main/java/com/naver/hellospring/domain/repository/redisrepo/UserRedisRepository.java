@@ -1,4 +1,4 @@
-package com.naver.hellospring.domain.redisrepo;
+package com.naver.hellospring.domain.repository.redisrepo;
 
 import org.springframework.data.repository.CrudRepository;
 

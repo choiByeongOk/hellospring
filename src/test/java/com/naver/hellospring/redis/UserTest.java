@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.naver.hellospring.domain.User;
-import com.naver.hellospring.domain.redisrepo.UserRedisRepository;
+import com.naver.hellospring.domain.repository.redisrepo.UserRedisRepository;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
